@@ -1,5 +1,0 @@
-.dark-bg-pattern {
-    background: radial-gradient(#374151 1px, transparent 1px);
-    background-size: 16px 16px;
-    mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 60%, transparent 100%);
-}
