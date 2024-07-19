@@ -8,43 +8,56 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="canonical" href="https://pyguard.top/">
     <script defer data-domain="pyguard.top" src="https://analytics.serverobot.de/js/script.outbound-links.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="PyGuard">
+    <meta name="application-name" content="PyGuard">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
-<body class="dark:bg-gray-900 min-h-screen">
+<body class="min-h-screen">
     <!-- Main content -->
-    <div class="absolute inset-0 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)] dark:bg-gray-900 dark:bg-[radial-gradient(#374151_1px,transparent_1px)] dark:[mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
-    <div class="relative min-h-screen bg-center bg-cover px-28 py-5">
+    <div class="relative min-h-screen bg-center px-28 py-5 inset-0 h-full w-full bg-gray-900 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] dark:bg-gray-900 dark:bg-[radial-gradient(#374151_1px,transparent_1px)]">
         <!-- Navigation -->
         <nav class="relative flex items-center justify-between p-4 bg-gray-800 border border-gray-700 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-            <!-- Logo aligned to the left -->
             <img src="images/logo.png" alt="PyGuard Logo" class="w-24 cursor-pointer">
-            
-            <!-- Centered navigation items -->
             <ul class="flex-1 flex justify-center space-x-8">
                 <li><a href="#" class="text-white text-xl px-4 py-2 hover:underline">Home</a></li>
                 <li><a href="#features" class="text-white text-xl px-4 py-2 hover:underline">Features</a></li>
             </ul>
         </nav>
+    
+        <!-- Main Content -->
         <div class="text-white mt-48 max-w-xl">
             <h1 class="text-6xl font-semibold leading-normal">PyGuard<br>Your Discord Bot</h1>
-            <p>PyGuard collects statistics about users messaging behavior on the global network of Discord servers with PyGuard and developed by PyGuard Bots.</p>
-            
+            <p class="mt-4">PyGuard collects statistics about users' messaging behavior on the global network of Discord servers with PyGuard, developed by PyGuard Bots.</p>
             <div class="mt-10">
-                <a href="/invite" class="bg-blue-800 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-blue-800 hover:text-white duration-300 hover:border border border-transparent">Invite</a>
-                <a href="#">search Users</a>
+                <a href="/invite" class="bg-blue-800 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-blue-800 hover:text-white duration-300 hover:border border-transparent">Invite</a>
+                <a href="#" class="bg-transparent rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-blue-800 hover:text-white duration-300 hover:border border-transparent">Search Users <span class="text-lg inline-block rotate-90">&#10148;</span></a>
             </div>
         </div>
+    </div>
+    
+    <div class="min-h-screen relative bg-cover bg-center px-28 py-5 bg-gray-900 text-white" id="features">
+        <h2 class="text-center text-4xl font-semibold leading-normal">Features</h2>
     </div>
     <footer class="bg-gray-900 text-center py-8">
         <div class="container mx-auto">
             <div class="mb-4">
                 <p class="text-gray-500 text-xs">&copy; 2024 pyguard.top</p>
                 <p class="text-gray-500 text-xs">
-                    Build by 
+                    Built by 
                     <a target="_blank" rel="dofollow noopener" href="https://arbs09.de/projects" class="hover:underline">arbs09</a>
                 </p>
             </div>
         </div>
     </footer>
-    
 </body>
 </html>
