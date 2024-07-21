@@ -21,17 +21,22 @@
     <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PyGuard">
+    <meta property="og:url" content="https://pyguard.top/">
+    <meta property="og:image" content="https://pyguard.top/images/logo-with-grey-bg.png">
+    <meta property="og:description" content="PyGuard collects statistics about users' messaging behavior on the global network of Discord servers with PyGuard.">
 </head>
-<body class="min-h-screen">
+<body class="min-h-screen scroll-smooth">
     <!-- Main content -->
     <div class="relative min-h-screen bg-center px-28 py-5 inset-0 h-full w-full bg-gray-900 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] dark:bg-gray-900 dark:bg-[radial-gradient(#374151_1px,transparent_1px)]">
         <!-- Navigation -->
         <nav class="relative flex items-center justify-between p-4 bg-gray-800 border border-gray-700 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
             <img src="images/logo.png" alt="PyGuard Logo" class="w-24 cursor-pointer">
             <ul class="flex-1 flex justify-center space-x-8">
-                <li><a href="#" class="text-white text-xl px-4 py-2 hover:underline">Home</a></li>
-                <li><a href="#features" class="text-white text-xl px-4 py-2 hover:underline">Features</a></li>
-                <li><a href="#comingsoon" class="text-white text-xl px-4 py-2 hover:underline">Coming Soon</a></li>
+                <li><a href="#" class="text-white text-xl px-4 py-2 hover:underline smooth-scroll">Home</a></li>
+                <li><a href="#features" class="text-white text-xl px-4 py-2 hover:underline smooth-scroll">Features</a></li>
+                <li><a href="#comingsoon" class="text-white text-xl px-4 py-2 hover:underline smooth-scroll">Coming Soon</a></li>
             </ul>
         </nav>
     
@@ -39,7 +44,7 @@
         <div class="text-white mt-48 max-w-xl">
             <h1 class="text-6xl font-semibold leading-normal">PyGuard<br>Your Discord Bot</h1>
             <p class="text-white">Built by <a target="_blank" rel="dofollow noopener" href="https://arbs09.de/projects" class="font-semibold bg-transparent rounded-lg inline-block hover:bg-transparent hover:border-white hover:text-white duration-300 border border-transparent py-1 px-1">arbs09</a></p>
-            <p class="mt-4">PyGuard collects statistics about users' messaging behavior on the global network of Discord servers with PyGuard, developed by PyGuard Bots.</p>
+            <p class="mt-4">PyGuard collects statistics about users' messaging behavior on the global network of Discord servers with PyGuard.</p>
             <div class="mt-10">
                 <a href="/invite" rel="dofollow" target="_blank" class="bg-blue-800 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-blue-800 hover:text-white duration-300 border border-transparent">Invite</a>
                 <a href="#features" class="bg-transparent rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-blue-800 hover:text-white duration-300 border border-transparent">Look up the features <span class="text-lg inline-block rotate-90">&#10148;</span></a>
@@ -89,5 +94,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelectorAll('a.smooth-scroll').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
