@@ -31,7 +31,7 @@ jobs:
 
       - name: Deploy the website
         run: |
-          sshpass -p "${{ secrets.DEPLOY_PASSWORD }}" rsync -avx -e 'ssh' --delete --exclude '.git' --exclude '.ssh' --exclude '.github' ./ $DEPLOY_USERNAME@$DEPLOY_SERVER:./
+          sshpass -p "${{ secrets.DEPLOY_PASSWORD }}" rsync -avx -e 'ssh' --delete --exclude '.git' --exclude '/css/input.css' --exclude 'package-lock.json' --exclude 'package.json' --exclude 'tailwind.config.js' --exclude 'README.md' --exclude 'dev.md' --exclude '.gitignore' --exclude 'node_modules' --exclude '.ssh' --exclude '.github' ./ $DEPLOY_USERNAME@$DEPLOY_SERVER:./
         env:
           DEPLOY_SERVER: ${{ secrets.DEPLOY_SERVER }}
           DEPLOY_USERNAME: ${{ secrets.DEPLOY_USERNAME }}
