@@ -12,6 +12,12 @@ jobs:
       - name: Checkout the current branch
         uses: actions/checkout@v3
 
+      - name: Install dependencies from package.json
+        run: npm install
+
+      - name: Build Tailwind CSS
+        run: npx tailwindcss -i input.css -o output.css --minify
+
       - name: Set up SSH known hosts
         run: |
           mkdir -p ~/.ssh
