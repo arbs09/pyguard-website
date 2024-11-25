@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pyguard.top/sitemap.xml
+Sitemap: https://pyguard.arbs09.dev/sitemap.xml
